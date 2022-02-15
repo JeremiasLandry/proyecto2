@@ -1,0 +1,32 @@
+[
+    {
+        "materia":"MATEMATICA",
+        "imagen":"../multimedia/materias/math.png",
+        "alt":"representacion grafica de Matematica"
+    },
+    {
+        "materia":"FÍSICA",
+        "imagen":"../multimedia/materias/fisica.png",
+        "alt":"representacion grafica de Fisica"
+    },
+    {
+        "materia":"QUÍMICA",
+        "imagen":"../multimedia/materias/chemistry.png",
+        "alt":"representacion grafica de Química"
+    },
+    {
+        "materia":"GEOGRAFÍA",
+        "imagen":"../multimedia/materias/geography.png",
+        "alt":"representacion grafica de Geografía"
+    },
+    {
+        "materia":"HISTORIA",
+        "imagen":"../multimedia/materias/history.png",
+        "alt":"representacion grafica de Historia"
+    },
+    {
+        "materia":"BIOLOGÍA",
+        "imagen":"../multimedia/materias/biology.png",
+        "alt":"representacion grafica de Biologia"
+    }
+]

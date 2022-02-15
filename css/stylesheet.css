@@ -1,0 +1,424 @@
+:root{
+	--mainBackground:#1f1d1c;
+	--mainBackgroundLight:#2f2d2a;
+	--mainBackgroundDark:#0d0c0c;
+	--font:#fff;
+	--secondaryColor:#EB5E28;
+
+}
+
+/* ESTILOS DEL INDEX HTML */
+
+html{
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+body{
+	margin: 0;
+	height:100%;
+	width:100%;
+	padding:0;
+	background-color:var(--mainBackgroundLight)
+}
+body::-webkit-scrollbar{
+	width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+	background-color:var(--mainBackground);
+}
+body::-webkit-scrollbar-thumb{
+	background-color:var(--secondaryColor)
+}
+/* NAVBAR */
+.navbar{
+
+	position:fixed;
+	background-color: var(--mainBackground);
+	transition: width 200ms ease;
+	padding: 0;
+}
+
+
+       /* flex Container */
+
+.navbar-nav{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	height:100%;
+}
+
+    /* nav items */
+
+.nav-item{
+	width: 100%;
+}
+.nav-item:last-child{
+	margin-top: auto;
+}
+	/* nav logo */
+.logo{
+	font-weight: bold;
+	text-transform:uppercase;
+	margin-bottom:1rem;
+	text-align: center;
+	color: var(--secondaryColor);
+	background-color:var(--mainBackgroundDark);
+	font-size:1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3ch;
+	width: 100%;
+}
+.logo-text{
+	margin-right:10px;
+}
+.logo-icon{
+	transform: rotate(0deg);
+	transition: transform 600ms;
+	max-width:1.5rem;
+	margin-left: 25px;
+}
+.navbar:hover .logo-icon{
+	transform: rotate(-180deg);
+}
+	/*nav links & text*/
+
+.nav-link{
+	display:flex;
+	align-items:center;
+	height: 5rem;
+	color:var(--secondaryColor);
+	text-decoration:none;
+	filter: grayscale(100%) opacity(0.7);
+	transition:all 600ms;
+}
+.nav-link:hover{
+	filter: grayscale(0%) opacity(1);
+	background-color:var(--mainBackgroundDark);
+	color: var(--secondaryColor);
+}
+.link-text{
+	display:none;
+	margin-left:1rem;
+}
+
+    /* icons */
+
+.icon{
+	min-width: 2rem;
+	margin: 0 1.5rem;
+}
+/* TITULO PRINCIPAL */
+main{
+	margin-left: 5rem;
+}
+.h1container{
+	padding-top:20px;
+}
+main h1{
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+	background-color: var(--mainBackgroundLight);
+	color: var(--secondaryColor);
+	border: 2px solid var(--secondaryColor);
+	padding: 15px;
+	margin: 15px;
+	margin-top: 0;
+	border-radius: 5px;
+	
+}
+/* SECCION PRINCIPAL */
+.main{
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+	flex-direction:column;
+	background-color:var(--secondaryColor);
+	color: var(--font);
+	padding: 15px;
+	margin: 0 15px;
+	border-radius: 5px;
+	box-shadow: -1px 2px 5px 0px rgba(196,81,36,0.75);
+	-webkit-box-shadow: -1px 2px 5px 0px rgba(196,81,36,0.75);
+	-moz-box-shadow: -1px 2px 5px 0px rgba(196,81,36,0.75);
+}
+.previewUser{
+	margin-bottom:5px;
+	font-weight: bold;
+}
+/* GRUPO DE BOTONES QUE SE VEN EN LA PAGINA PRINCIPAL */
+.buttonGroup{
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	margin: 15px;
+}
+/* BOTON 'AÑADIR ALUMNO' */
+.buttonGroup-Add{
+	color: var(--secondaryColor);
+	outline:none;
+	border: 2px solid var(--secondaryColor);
+	background-color:var(--mainBackgroundLight);
+	padding: 7px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 15px;
+}
+.buttonGroup-Add:hover{
+	border: 2px solid var(--secondaryColor);
+	background-color: var(--secondaryColor);
+	color: #fff;
+}
+/* LINK PARA IR A LA SECCION DE 'REGISTRO DE ALUMNOS' */
+.registroLink{
+	color: var(--secondaryColor);
+	text-decoration: none;
+}
+.registroLink:hover{
+	text-decoration: underline;
+}
+
+/* MODAL */
+    /* TITULO */
+	.tituloModal{
+		display: flex;
+		justify-content:center;
+		font-size:40px;
+		font-weight:bold;
+		margin:10px 0;
+	}
+	/* CONTENEDOR */
+.modalContainer{
+	display:flex;
+	position:fixed;
+	z-index: 100;
+	justify-content: center;
+	width:100vw;
+	height:100vh;
+	margin-top:0;
+	background-color: rgba(0, 0, 0, 0.685);
+}
+  /* MODAL */
+.modal{
+	display:flex;
+	flex-direction: column;
+	background-color:var(--mainBackgroundLight);
+	color: var(--font);
+	width:auto;
+	height: 720px;
+	max-height:550px;
+	justify-content:center;
+	margin:auto auto;
+	align-items:center;
+	align-content: center;
+	border-radius: 5px;
+	padding: 15px;
+	padding-bottom:40px;
+	z-index: 1;
+	overflow: hidden;
+	position:relative;
+
+}
+/* FORM DEL MODAL */
+.modal form{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+	padding:20px;
+	max-width: 100%;
+	max-height:500px;
+	
+}
+/* CONJUNTO DE DATOS PERSONALES (NOMBRE,APELLIDO,EDAD) */
+.datos{
+	display: flex;
+	justify-content:center;
+	margin: auto auto;
+}
+
+.datosAlumno{
+	background-color: var(--mainBackground);
+	color: #fff;
+	border:none;
+	outline: none;
+	border-radius: 5px;
+	padding: 10px;
+	margin:10px 20px;
+}
+.datosAlumno::placeholder{
+	color: var(--mainBackgroundLight);
+}
+/* GRUPO DE MATERIAS */
+.grupoDeMaterias{
+	display:flex;
+	justify-content:center;
+	/* padding:10px; */
+	margin: 20px;
+
+}
+/* LABEL DE  MATERIAS */
+.materia{
+	margin:10px 0px;
+	background-color:var(--mainBackground);
+	color: var(--font);
+	margin:0 20px;
+	padding: 8px;
+	border-radius: 5px;
+}
+/* INPUT DE MATERIAS */
+#matematica,#quimica,#fisica,#historia,#geografia,#biologia{
+	margin: 20px 0;
+	color: #fff;
+	border:none;
+	background-color: var(--mainBackground);
+	padding:5px;
+	border-radius: 5px;
+}
+#matematica,#quimica,#fisica,#historia,#geografia,#biologia::placeholder{
+	color:rgb(144, 144, 144);
+}
+/* GRUPOS DE MATERIAS (SE DIVIDEN EN 3 PAREJAS DE 2 MATERIAS) */
+.materiasGrupo1,.materiasGrupo2,.materiasGrupo3{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+/* BOTON PARA GUARDAR CAMBIOS Y AGREGAR ALUMNO AL REGISTRO */
+.modalBtnGroup{
+	display: flex;
+	justify-content:center;
+	align-content: center;
+	align-items: center;
+	
+}
+.saveBtn{
+	border:none;
+	padding:10px 0;
+	border-radius: 5px;
+	outline:2px solid var(--secondaryColor);
+	outline-offset: 5px;
+	color: #fff;
+	background-color: var(--secondaryColor);
+	cursor: pointer;
+	font-weight: bold;
+	width: 25%;
+	margin: auto;
+	
+}
+.saveBtn:hover{
+	opacity: .7;
+}
+/* BOTON PARA CANCELAR CAMBIOS */
+.quitBtn{
+	border:none;
+	padding:9px 0;
+	border-radius: 5px;
+	outline:2px solid var(--secondaryColor);
+	outline-offset: 5px;
+	color: var(--secondaryColor);
+	background-color:transparent;
+	cursor: pointer;
+	font-weight: bold;
+	width: 25%;
+	margin: auto;
+}
+.quitBtn:hover{
+	background-color:var(--secondaryColor);
+	color: var(--font);
+
+}
+/* SMALL SCREENS */
+@media only screen and (max-width:600px){
+	.navbar{
+		bottom: 0;
+		width: 100vw;
+		height:5rem;
+
+	}
+	.logo{
+		display:none;
+	}
+	.navbar-nav{
+		flex-direction: row;
+		width: 100%;
+	}
+	.nav-link {
+		justify-content: center;
+	}
+	.nav-link:hover{
+		color: var(--secondaryColor);
+	}
+	main{
+		margin: 0;
+	}
+}
+
+
+/* LARGE SCREENS */
+@media only screen and (min-width:600px){
+ 	.navbar{
+	 top:0;
+	 width: 5rem;
+	 height: 100vh;
+ }
+ 	.navbar:hover{
+	width: 16rem;
+}
+	.navbar:hover .link-text{
+	display:inline;
+	transition:opacity 600ms;
+}
+	#cardsContainer{
+		margin:100px;
+		max-width: 1000px;
+	}
+}
+
+/* ESTILOS DE registroAlumnos.html */
+#cardsContainer{
+	position: absolute;
+	z-index: -100;
+	margin:40px;
+	padding-bottom: 100px;
+}
+.card{
+	background-color: var(--mainBackground);
+	color: var(--font);
+	border: none;
+	box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.56);
+	-webkit-box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.56);
+	-moz-box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.56);
+	transition: transform 200ms ease-in;
+}
+.card:hover{
+	transform:scale(.98,.98);
+	cursor: pointer;
+}
+@media screen and (max-width:816px) {
+	.modal{
+		width:auto;
+		max-width: 500px;
+		height: 900px;
+		max-height:900px;
+	
+	}
+	/* FORM DEL MODAL */
+	.modal form{
+		max-height:900px;
+		
+	}
+	.datos{
+		display:flex;
+		flex-wrap: wrap;
+	}
+}

@@ -1,0 +1,38 @@
+[
+{
+    "nombre":"Jose Fernandez",
+    "materia":"Profesor de Historia",
+    "fotoUrl":"../multimedia/pic1.jpg",
+    "uptade":"Last updated 3 mins ago"
+},
+{
+    "nombre":"Juan Benavidez",
+    "materia":"Profesor de Matematica",
+    "fotoUrl":"../multimedia/pic2.jpg",
+    "uptade":"Last updated 5 mins ago"
+},
+{
+    "nombre":"Walter Rodriguez",
+    "materia":"Profesor de Biologia",
+    "fotoUrl":"../multimedia/pic3.jpg",
+    "uptade":"Last updated 7 mins ago"
+},
+{
+    "nombre":"Lautaro Hernandez",
+    "materia":"Profesor de Fisica",
+    "fotoUrl":"../multimedia/pic4.jpg",
+    "uptade":"Last updated 10 mins ago"
+},
+{
+    "nombre":"Francisco Araneda",
+    "materia":"Profesor de Quimica",
+    "fotoUrl":"../multimedia/pic5.jpg",
+    "uptade":"Last updated 11 mins ago"
+},
+{
+    "nombre":"Ramiro Araya",
+    "materia":"Profesor de Geografía",
+    "fotoUrl":"../multimedia/pic6.jpg",
+    "uptade":"Last updated 14 mins ago"
+}
+]
